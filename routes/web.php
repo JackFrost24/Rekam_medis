@@ -9,7 +9,19 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+});
+
+Route::get('/pasien', function () {
+    return view('pasien');
+});
+
+Route::get('/jadwal', function () {
+    return view('jadwal');
+});
+
+Route::get('/addpasien', function () {
+    return view('addpasien');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

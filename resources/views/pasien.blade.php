@@ -101,7 +101,66 @@
     </header>
     <main>
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <!-- Your content -->
+        
+        <div class="p-6">
+            <!-- Search Bar -->
+            <div class="mb-4 flex items-center space-x-2">
+                <input 
+                    type="text" 
+                    placeholder="Search patients..." 
+                    class="flex-1 border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded flex items-center">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded flex items-center">
+                    <i class="fas fa-plus mr-2"></i> Add Patient
+                </button>
+            </div>
+
+            <!-- Patient Table -->
+            <div class="bg-white rounded shadow overflow-hidden">
+                <table class="min-w-full table-auto border-collapse">
+                    <thead>
+                        <tr class="bg-gray-200 text-left text-gray-600">
+                            <th class="p-4">#</th>
+                            <th class="p-4">Name</th>
+                            <th class="p-4">Age</th>
+                            <th class="p-4">Gender</th>
+                            <th class="p-4">Contact</th>
+                            <th class="p-4">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b hover:bg-gray-100">
+                            <td class="p-4">1</td>
+                            <td class="p-4">John Doe</td>
+                            <td class="p-4">30</td>
+                            <td class="p-4">Male</td>
+                            <td class="p-4">123-456-7890</td>
+                            <td class="p-4">
+                                <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">View</button>
+                                <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded text-sm">Edit</button>
+                                <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- Repeat rows as needed -->
+                        <tr class="border-b hover:bg-gray-100">
+                            <td class="p-4">2</td>
+                            <td class="p-4">Jane Smith</td>
+                            <td class="p-4">25</td>
+                            <td class="p-4">Female</td>
+                            <td class="p-4">987-654-3210</td>
+                            <td class="p-4">
+                                <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm">View</button>
+                                <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded text-sm">Edit</button>
+                                <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
       </div>
     </main>
   </div>

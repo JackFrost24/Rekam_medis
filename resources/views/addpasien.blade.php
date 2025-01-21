@@ -101,7 +101,92 @@
     </header>
     <main>
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <!-- Your content -->
+        <body class="font-roboto bg-gray-100">
+            <div class="min-h-screen flex flex-col items-center py-8">
+              <h1 class="text-2xl font-bold mb-6">Patient Input Form</h1>
+              <form class="w-full max-w-3xl bg-white p-6 rounded shadow">
+                <!-- General Information -->
+                <section class="mb-6">
+                  <h2 class="text-xl font-semibold mb-4">General Information</h2>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <label for="name" class="block text-sm font-medium">Patient Name</label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="mt-1 block w-full p-2 border rounded"
+                        placeholder="Enter patient name"
+                      />
+                    </div>
+                    <div>
+                      <label for="age" class="block text-sm font-medium">Age</label>
+                      <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        class="mt-1 block w-full p-2 border rounded"
+                        placeholder="Enter patient age"
+                      />
+                    </div>
+                    <div>
+                      <label for="gender" class="block text-sm font-medium">Gender</label>
+                      <select
+                        id="gender"
+                        name="gender"
+                        class="mt-1 block w-full p-2 border rounded"
+                      >
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="contact" class="block text-sm font-medium">Contact Number</label>
+                      <input
+                        type="text"
+                        id="contact"
+                        name="contact"
+                        class="mt-1 block w-full p-2 border rounded"
+                        placeholder="Enter contact number"
+                      />
+                    </div>
+                  </div>
+                </section>
+        
+                <!-- Odontogram -->
+                <section class="mb-6">
+                  <h2 class="text-xl font-semibold mb-4">Odontogram</h2>
+                  <div class="border rounded p-4 bg-gray-50">
+                    <p class="text-gray-600">Interactive odontogram will be displayed here.</p>
+                    <!-- Placeholder for the odontogram UI -->
+                  </div>
+                </section>
+        
+                <!-- Doctor's Notes -->
+                <section class="mb-6">
+                  <h2 class="text-xl font-semibold mb-4">Doctor's Notes</h2>
+                  <textarea
+                    id="notes"
+                    name="notes"
+                    class="w-full p-2 border rounded"
+                    rows="4"
+                    placeholder="Enter doctor's notes here..."
+                  ></textarea>
+                </section>
+        
+                <!-- Submit Button -->
+                <div class="flex justify-end">
+                  <button
+                    type="submit"
+                    class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500"
+                  >
+                    Save Data
+                  </button>
+                </div>
+              </form>
+            </div>
+          </body>
       </div>
     </main>
   </div>
